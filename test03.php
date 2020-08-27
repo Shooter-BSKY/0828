@@ -1,13 +1,29 @@
-<h2>超神準大樂透預測王</h2>
+<h1>公益彩卷</h1>
 <hr>
 <?php
-	for ($i=0; $i<6; $i++) {
-		echo rand(1, 49);
-		if ($i<5) {
-			echo ", ";
-		}
+	$count = 0 ;//目前取得的數字個數
+	while ($count < 5 ) {
+		$t= rand(1 , 49); //先取得一個候選的隨機數
+		if (in_array($t, $lotto)) continue;
+		$lotto[] = $t;
+		$count ++;
+
+		
 	}
-	echo "<br>特別號：". rand(1, 49);
+	sort($lotto);
+	foreach ($lotto as $no) {
+		echo $no . ",";
+	}
+        
+        $c= rand(1,49);
+        while (in_array($c,$lotto))
+            $c=rand(1,49); 
+        	
+        
+		echo "<br>特別號:". $c;
+
 ?>
 <hr>
-不準免錢，有中歡迎斗內...
+中獎請捐錢...接下來請收看...
+<hr>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GKmkErTYXYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -1,10 +1,8 @@
 <?php
-	$chi = 65;
-	$eng = 92;
-	$mat = 98;
-	$his = 72;
-	$total = $chi + $eng + $mat + $his;
-	$score = $total / 4;
+ $scores = array(65,92,98,72);
+
+	$total = array_sum($scores);
+	$score = $total / count($scores);
 
 	echo "總分：". $total . "分<br>";
 	echo "平均：". $score . "分<br>";
