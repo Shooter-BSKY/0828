@@ -1,29 +1,10 @@
-<h1>公益彩卷</h1>
-<hr>
 <?php
-	$count = 0 ;//目前取得的數字個數
-	while ($count < 5 ) {
-		$t= rand(1 , 49); //先取得一個候選的隨機數
-		if (in_array($t, $lotto)) continue;
-		$lotto[] = $t;
-		$count ++;
+  "《The Bonfire 2 Uncharted Shores》手機遊戲 考驗你的生存能力","巴哈姆特手機遊戲","M-SDHZvkhgw"
+  "「守望傳說」抽卡秘訣來啦！課金教學到底有多狂？文老爹","守望傳說","Ao8nIWTBCBo"
+  "美波「等待雨､」MV","美波音樂","766qmHTc2ro"
+  "DAOKO × 米津玄師『打上花火』MUSIC VIDEO","打上花火音樂","-tKVN2mAKRI"
+  "【0822】卡提諾狂新聞 #233 說個笑話","卡提諾狂新聞","XaomJnjwGxo"
 
-		
-	}
-	sort($lotto);
-	foreach ($lotto as $no) {
-		echo $no . ",";
-	}
-        
-        $c= rand(1,49);
-        while (in_array($c,$lotto))
-            $c=rand(1,49); 
-        	
-        
-		echo "<br>特別號:". $c;
+  $tvdata=array("全名","簡稱","vid")
 
 ?>
-<hr>
-中獎請捐錢...接下來請收看...
-<hr>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GKmkErTYXYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
